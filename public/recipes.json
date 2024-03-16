@@ -1,0 +1,97 @@
+[
+      {
+        "recipe_id": "R001",
+        "recipe_name": "Spicy Basil Chicken Stir-Fry",
+        "short_description": "A quick and flavorful chicken dish with basil leaves.",
+        "ingredients": [
+          "550 g chicken breast, sliced",
+          "120 ml soy sauce",
+          "200 g fresh basil leaves",
+          "400 g mushrooms, sliced"
+        ],
+        "preparing_time": "30 minutes",
+        "calories": "320 calories",
+        "recipe_image_url": "https://i.ibb.co/F3CJjqW/th.jpg"
+      },
+      {
+        "recipe_id": "R002",
+        "recipe_name": "Mushroom Risotto",
+        "short_description": "Creamy rice dish with sautéed mushrooms.",
+        "ingredients": [
+          "1 cup Arborio rice",
+          "400 g mixed mushrooms (shiitake, cremini, oyster)",
+          "1 onion, finely chopped",
+          "2 cloves garlic, minced",
+          "1 liter vegetable broth",
+          "50 g Parmesan cheese, grated"
+        ],
+        "preparing_time": "40 minutes",
+        "calories": "420 calories",
+        "recipe_image_url": "https://i.ibb.co/F3CJjqW/th.jpg"
+      },
+      {
+        "recipe_id": "R003",
+        "recipe_name": "Classic Margherita Pizza",
+        "short_description": "Simple and delicious pizza topped with fresh tomatoes and basil.",
+        "ingredients": [
+          "1 pizza dough (store-bought or homemade)",
+          "200 g fresh mozzarella cheese, sliced",
+          "2 large tomatoes, thinly sliced",
+          "Handful of fresh basil leaves",
+          "2 tbsp olive oil",
+          "Salt and pepper to taste"
+        ],
+        "preparing_time": "25 minutes",
+        "calories": "380 calories",
+        "recipe_image_url": "https://i.ibb.co/F3CJjqW/th.jpg"
+      },
+      {
+        "recipe_id": "R004",
+        "recipe_name": "Vegetable Stir-Fried Noodles",
+        "short_description": "Colorful veggie noodles with a savory sauce.",
+        "ingredients": [
+          "200 g rice noodles",
+          "1 red bell pepper, julienned",
+          "1 carrot, thinly sliced",
+          "100 g snow peas, trimmed",
+          "2 tbsp soy sauce",
+          "1 tbsp sesame oil",
+          "1 tsp ginger, minced"
+        ],
+        "preparing_time": "20 minutes",
+        "calories": "280 calories",
+        "recipe_image_url": "https://i.ibb.co/F3CJjqW/th.jpg"
+      },
+      {
+        "recipe_id": "R005",
+        "recipe_name": "Berry Smoothie Bowl",
+        "short_description": "A refreshing and nutritious breakfast bowl.",
+        "ingredients": [
+          "1 cup mixed berries (strawberries, blueberries, raspberries)",
+          "1 banana",
+          "1 cup Greek yogurt",
+          "2 tbsp honey",
+          "Granola and sliced almonds for topping"
+        ],
+        "preparing_time": "10 minutes",
+        "calories": "220 calories",
+        "recipe_image_url": "https://i.ibb.co/F3CJjqW/th.jpg"
+      },
+      {
+        "recipe_id": "R006",
+        "recipe_name": "Chocolate Avocado Mousse",
+        "short_description": "Decadent dessert made with avocados and dark chocolate.",
+        "ingredients": [
+          "2 ripe avocados",
+          "100 g dark chocolate (70% cocoa), melted",
+          "3 tbsp cocoa powder",
+          "2 tbsp maple syrup",
+          "1 tsp vanilla extract",
+          "Pinch of salt"
+        ],
+        "preparing_time": "15 minutes",
+        "calories": "280 calories",
+        "recipe_image_url": "https://i.ibb.co/F3CJjqW/th.jpg"
+      }
+]
+  
