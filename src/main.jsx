@@ -11,6 +11,7 @@ import About from './components/About.jsx'
 import AuthProver from './components/AuthProver.jsx'
 import Login from './components/Login.jsx'
 import Register from './components/Register.jsx'
+import PrivateRoute from './components/PrivateRoute.jsx'
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/recipe',
-        element: <Recipe></Recipe>
+        element: <PrivateRoute> <Recipe></Recipe> </PrivateRoute>
       },
       {
         path: '/about',

@@ -19,12 +19,13 @@ const Navbar = () => {
                     </div>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 space-x-6 shadow bg-base-100 rounded-box w-52">
                         <Link className='text-lg hover:underline font-bold' to="/">Home</Link>
-                        <Link className='text-lg hover:underline font-bold' to="/recipe">Recipe</Link>
+                        {
+                            user && <Link className='text-lg hover:underline font-bold' to="/recipe">Recipe</Link>
+                        }
                         <Link className='text-lg hover:underline font-bold' to="/about">About</Link>
                         {/* <Link className='text-lg hover:underline font-bold' to="/login">login</Link> */}
                         {/* <Link className='text-lg hover:underline font-bold' to="/register">Register</Link> */}
 
-                        <li><a>Item 3</a></li>
                     </ul>
                 </div>
                 <a className="btn btn-ghost text-3xl">Recipe Calories</a>
@@ -32,7 +33,9 @@ const Navbar = () => {
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 space-x-6">
                     <Link className='text-lg hover:underline font-bold' to="/">Home</Link>
-                    <Link className='text-lg hover:underline font-bold' to="/recipe">Recipe</Link>
+                    {
+                            user && <Link className='text-lg hover:underline font-bold' to="/recipe">Recipe</Link>
+                        }
                     <Link className='text-lg hover:underline font-bold' to="/about">About</Link>
                     {/* <Link className='text-lg hover:underline font-bold' to="/login">Login</Link> */}
                     {/* <Link className='text-lg hover:underline font-bold' to="/register">Register</Link> */}
