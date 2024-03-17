@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { authContext } from './AuthProver';
+import LogOut from './LogOut';
+import { FaUser } from "react-icons/fa";
+import { FaSignInAlt } from "react-icons/fa";
+
+
 
 const Navbar = () => {
+    const authInfo = useContext(authContext)
+    const { user } = authInfo
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
@@ -13,6 +21,8 @@ const Navbar = () => {
                         <Link className='text-lg hover:underline font-bold' to="/">Home</Link>
                         <Link className='text-lg hover:underline font-bold' to="/recipe">Recipe</Link>
                         <Link className='text-lg hover:underline font-bold' to="/about">About</Link>
+                        {/* <Link className='text-lg hover:underline font-bold' to="/login">login</Link> */}
+                        {/* <Link className='text-lg hover:underline font-bold' to="/register">Register</Link> */}
 
                         <li><a>Item 3</a></li>
                     </ul>
@@ -24,17 +34,24 @@ const Navbar = () => {
                     <Link className='text-lg hover:underline font-bold' to="/">Home</Link>
                     <Link className='text-lg hover:underline font-bold' to="/recipe">Recipe</Link>
                     <Link className='text-lg hover:underline font-bold' to="/about">About</Link>
+                    {/* <Link className='text-lg hover:underline font-bold' to="/login">Login</Link> */}
+                    {/* <Link className='text-lg hover:underline font-bold' to="/register">Register</Link> */}
                 </ul>
             </div>
             <div className="navbar navbar-end dropdown dropdown-end">
-                    <div className="form-control mr-4">
-                        <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
-                    </div>
-                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                        <div className="w-10 rounded-full">
-                            <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                        </div>
-                    </div>
+                <div className="form-control mr-4">
+                    <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+                </div>
+                {
+                    user ?
+                        <div>
+                            <div className='w-12'>
+                            <FaUser className='w-full text-2xl'></FaUser>
+                            </div>
+                            <LogOut></LogOut>
+                        </div> : <Link to="/login" className='btn hover:underline'>LOGIN <FaSignInAlt />
+ </Link>
+                }
             </div>
         </div>
     );
